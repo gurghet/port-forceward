@@ -1,5 +1,6 @@
 # port-forceward
-Simple app to force kubectl port-forward
+Simple app to force kubectl port-forward.
+It will try to `kubectl port-forward` until it succeeds.
 
 # Usage
 
