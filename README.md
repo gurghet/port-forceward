@@ -1,6 +1,7 @@
 # port-forceward
 Simple app to force kubectl port-forward.
 It will try to `kubectl port-forward` until it succeeds.
+It does not have autocompletion but it will try to suggest how to find the resource you were looking for.
 
 # Usage
 
