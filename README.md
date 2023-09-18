@@ -51,3 +51,7 @@ OPTIONS
 
     This setting is optional. Default: 'None'.
 ```
+For example:
+```
+./port-forceward -t svc -r gv-essentials-kafka-ui -p 3001:80 --kubeconfig /Users/gurghet/Downloads/myCluster.yaml
+```
