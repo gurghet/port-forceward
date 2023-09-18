@@ -229,8 +229,8 @@ object PortForceward extends ZIOCliDefault {
         s"Congratulations! You have successfully port-forwarded $rscType/$rscName to your local machine."
       )
       brokenPipeSentinel <- Promise.make[Nothing, Unit]
-      _ <- proc.stderr.linesStream
-        .filter(_.contains("error"))
+      _ <- proc.stderr.linesStream.merge(proc.stdout.linesStream)
+        .filter(t => t.toLowerCase().contains("error"))
         .foreach(_ => brokenPipeSentinel.succeed(()))
         .fork
       _ <- brokenPipeSentinel.await
