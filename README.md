@@ -53,5 +53,5 @@ OPTIONS
 ```
 For example:
 ```
-./port-forceward -t svc -r gv-essentials-kafka-ui -p 3001:80 --kubeconfig /Users/gurghet/Downloads/myCluster.yaml
+./port-forceward -t svc -r kafka-ui -p 3001:80 --kubeconfig /Users/gurghet/Downloads/myCluster.yaml
 ```
