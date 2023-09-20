@@ -5,7 +5,7 @@ It does not have autocompletion but it will try to suggest how to find the resou
 
 # Usage
 
-Download the `port-forceward` and give it execution permissions. Then type
+Download the [port-forceward](https://github.com/gurghet/port-forceward/releases/download/1.2.0/port-forceward) java autolauncher and give it execution permissions. Then type
 ```
 ./port-forceward --help
 ```
